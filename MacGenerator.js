@@ -189,12 +189,14 @@ function getRandomOrder(settings) {
 }
 
 // 注文結果を表示
-function displayOrder(orderData) {
+function displayOrder(orderData, settings) {
     const resultDiv = document.getElementById("orderResult");
     resultDiv.innerHTML = "";
 
-    if (orderData.order.length === 0) {
-        resultDiv.innerHTML = "<p>予算内で注文できるメニューがありません。</p>";
+    let { budget, limits } = settings;
+
+    if (budget < 1000) {
+        resultDiv.innerHTML = "<p>1000円以上を入力しろと書いてあるだろ</p>";
         return;
     }
 
@@ -211,5 +213,5 @@ function displayOrder(orderData) {
 function startOrder() {
     const settings = getOrderSettings();
     const orderData = getRandomOrder(settings);
-    displayOrder(orderData);
+    displayOrder(orderData, settings);
 }
