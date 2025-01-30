@@ -95,8 +95,8 @@ const menu = [
     { name: "シャカチキ(チキンのみ)", price: 200, attribute: 2 },
     { name: "シャカチキ(レッドペッパー)", price: 200, attribute: 2 },
     { name: "シャカチキ(チェダーチーズ)", price: 200, attribute: 2 },
-    { name: "バーベキュー", price: 40, attribute: 2 },
-    { name: "マスタード", price: 40, attribute: 2 },
+    { name: "バーベキューソース", price: 40, attribute: 2 },
+    { name: "マスタードソース", price: 40, attribute: 2 },
 
     //ドリンク
     { name: "コカ・コーラ", price: 240, attribute: 3 },
