@@ -166,6 +166,12 @@ function getRandomOrder(settings) {
     let totalCost = 0;
     let categoryCount = { 0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 };
 
+    // 上限数が全て0の場合にエラーメッセージを表示
+    if (Object.values(limits).every(limit => limit === 0)) {
+        window.location.href = "https://starhill.ed.jp/";
+        return;
+    }
+
     while (totalCost < budget) {
         let item = menu[Math.floor(Math.random() * menu.length)];
 
