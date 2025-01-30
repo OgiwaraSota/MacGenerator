@@ -153,8 +153,8 @@ function getOrderSettings() {
         1: parseInt(document.getElementById("setLimit").value, 10),
         2: parseInt(document.getElementById("sideLimit").value, 10),
         3: parseInt(document.getElementById("drinkLimit").value, 10),
-        4: parseInt(document.getElementById("happySetLimit").value, 10) || Infinity,
-        5: parseInt(document.getElementById("sweetLimit").value, 10) || Infinity
+        4: parseInt(document.getElementById("happySetLimit").value, 10),
+        5: parseInt(document.getElementById("sweetLimit").value, 10),
     };
     return { budget, limits };
 }
