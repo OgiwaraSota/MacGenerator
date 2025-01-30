@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>マック注文ランダム生成</title>
+    <link rel="stylesheet" href="style.css">
+    <script src = "MacGenerator.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>マック注文シミュレーター</h1>
+    
+        <label for="budget">予算 (円)</label>
+        <input type="number" id="budget" min="0" placeholder="金額を入力" />
+    
+        <h2>各カテゴリの上限</h2>
+    
+        <label for="burgerLimit">バーガー</label>
+        <select id="burgerLimit">
+            <option value="Infinity">無制限</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+    
+        <label for="setLimit">セット</label>
+        <select id="setLimit">
+            <option value="Infinity">無制限</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+    
+        <label for="sideLimit">サイド</label>
+        <select id="sideLimit">
+            <option value="Infinity">無制限</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+    
+        <label for="drinkLimit">ドリンク</label>
+        <select id="drinkLimit">
+            <option value="Infinity">無制限</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+    
+        <button onclick="startOrder()">注文する</button>
+    
+        <div id="orderResult"></div>
+    </div>
+    
+</body>
+</html>
