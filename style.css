@@ -1,0 +1,96 @@
+/* 全体の設定 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe600; /* マクドナルドの黄色 */
+    color: #2c2c2c;
+    text-align: center;
+    padding: 20px;
+}
+
+/* コンテナ */
+.container {
+    max-width: 500px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 見出し */
+h1 {
+    color: #d81e04; /* マクドナルドの赤 */
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* ラベル */
+label {
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+}
+
+/* 入力フィールド */
+input {
+    width: 100%;
+    padding: 8px;
+    border: 2px solid #d81e04;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* ボタン */
+button {
+    background-color: #d81e04;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #a51500;
+}
+
+/* 結果表示 */
+#orderResult {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #fff8dc; /* 薄い黄色 */
+    border: 2px solid #d81e04;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+/* メニューリスト */
+#orderResult ul {
+    list-style: none;
+    padding: 0;
+}
+
+#orderResult li {
+    background-color: #ffe600;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* 選択メニューのデザイン */
+select {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    border: 2px solid #d81e04;
+    border-radius: 5px;
+    text-align: center;
+    background-color: white;
+}
