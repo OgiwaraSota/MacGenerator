@@ -168,6 +168,7 @@ function getRandomOrder(settings) {
 
     // 上限数が全て0の場合にエラーメッセージを表示
     if (Object.values(limits).every(limit => limit === 0)) {
+        console.log("こんにちは");
         window.location.href = "https://starhill.ed.jp/";
         return;
     }
