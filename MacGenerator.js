@@ -211,6 +211,14 @@ function displayOrder(orderData, settings) {
 
 // 注文処理
 function startOrder() {
+    // 予算入力欄の値を取得
+    const budgetInput = document.getElementById("budget").value;
+
+    // 金額入力欄に「ロッテリア」が入力された場合
+    if (budgetInput.toLowerCase() === "ロッテリア") {
+        window.location.href = "shine.html";  // ロッテリア入力で遷移
+        return;  // 処理を終了
+    }
     const settings = getOrderSettings();
     const orderData = getRandomOrder(settings);
     displayOrder(orderData, settings);
